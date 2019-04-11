@@ -1,0 +1,198 @@
+/*colours:*/
+/*  PINK: 
+    dark:    d45c9e 
+    light:   f47cc3
+
+    BLUE:
+    dark:    2c3e50
+    light:   34495e
+
+    BLACK:
+    dark:    262626
+    light:   2b2b2b
+
+    WHITE:
+    dark:    bdc3c7
+    light:   ecf0f1
+    lighter: f1afafa
+*/
+
+/* custom font */
+@font-face {
+    font-family: openSansLight;
+    src: url('fonts/OpenSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: geometria;
+    src: url('fonts/geometria.woff2') format('woff2'),
+         url('fonts/geometria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*BROWSER RESET */
+section, article, header, footer, nav, aside, figure,
+figcaption,hgroup, h1, h2 {
+    display:block; 
+}
+
+* {
+    text-decoration: none;
+    font-family: openSansLight;
+    color: #262626;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+a {
+    color: #d45c9e;
+    font-weight: 300;
+}
+
+/* wrapper */
+.wrapper {
+    position: relative;
+    max-width: 1960px;
+    margin: auto;  
+}
+
+header {
+    position: static;
+    background-color: #ecf0f1;
+    width: 100%;
+    border-bottom: 1px;
+}
+
+header img {
+    width: 60px;
+}
+
+/*INDEX PAGE __________________________________________________________________*/
+
+/* PROFILE SECTION=================================*/
+#profileInfo {
+    padding-top: 1em;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+}
+
+#profileInfo img {
+    margin: 0 .5em;
+    width: 45px;
+    float: left;
+}
+
+#profileInfo :nth-child(2){
+    font-weight: 700;
+}
+
+/* MIIDDLE SECTION=================================*/
+#middleSection {
+    padding: 0 .5em 0;
+    margin-left: 20%;
+    background-color: #ffffff;
+    width: 60%;
+    height: 100%;
+    float: left;    
+}
+
+/*POST FORM*/
+#index #middleSection input {
+    width: 100%;
+}
+
+#index #middleSection form :first-child {
+    margin-top: 1em;
+    height: 4em;
+}
+
+.post {
+    margin-top: 2em;
+}
+
+.post img {
+    float: left; 
+    width: 4em;
+    margin-right: .5em;
+}
+
+.userName {
+    font-weight: 700;
+    width: 90%;
+    float: left;
+}
+
+@media screen and (max-width: 1220px) {
+    .userName {
+        width: 85%;
+    }
+}
+
+.post form :first-child {
+    
+}
+
+/* "ADVERTISING" SECTION==========================*/
+#advertisements {
+    /*float: right;
+    width: 18%;
+    height: 100%;*/
+}
+
+/*LOGIN PAGE __________________________________________________________________*/
+#loginPage section{
+    margin-left: 20%;
+    width: 60%;
+    padding-bottom: 40%;
+}
+
+#loginPage img{
+    width: 50%;
+    margin: 2em 25%;
+}
+
+#loginPage form {
+    
+}
+
+#loginPage input{
+    margin: 0 35%;
+    padding: 0 .5em;
+    width: 30%;
+}
+
+#loginPage form :last-child {
+    width: 32%;
+    background-color: white;
+}
+
+#loginPage p {
+    width: 50%;
+    margin: 1em auto;
+    text-align: center;
+}
+#loginPage mark {
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: 1em auto;
+}
+
+/*REGISTER PAGE __________________________________________________________________*/
+fieldset {
+    border: none;
+}
+
+#registerPage form{
+    margin: 2em 0 0 2em;
+}
